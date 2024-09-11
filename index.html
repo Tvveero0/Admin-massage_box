@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer-Admin Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Customer Chat Window -->
+        <div class="chat-window" id="customerWindow">
+            <h2>Customer Chat</h2>
+            <div id="customerChatBox" class="chat-box"></div>
+            <input type="text" id="customerInput" placeholder="Type your message...">
+            <button onclick="sendCustomerMessage()">Send</button>
+        </div>
+
+        <!-- Admin Login Option -->
+        <button id="adminLoginBtn" onclick="showAdminLogin()">Admin Login</button>
+
+        <!-- Admin Login Panel -->
+        <div id="adminLoginPanel" style="display:none;">
+            <input type="password" id="adminKeyInput" placeholder="Enter Admin Key">
+            <button onclick="checkAdminKey()">Login</button>
+        </div>
+
+        <!-- Admin Chat Panel (Initially Hidden) -->
+        <div class="chat-window" id="adminWindow" style="display:none;">
+            <h2>Admin Chat Panel <button onclick="logoutAdmin()">Logout</button></h2>
+            <div id="adminChatBox" class="chat-box"></div>
+            <input type="text" id="adminInput" placeholder="Type your message...">
+            <button onclick="sendAdminMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

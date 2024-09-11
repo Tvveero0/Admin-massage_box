@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    color: white;
+    padding: 20px;
+}
+
+.chat-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.chat-window {
+    background: #1e1e2f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.chat-box {
+    background: #2e2e3e;
+    border: 1px solid #00ffaa;
+    padding: 10px;
+    border-radius: 10px;
+    height: 150px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #00ffaa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+button:hover {
+    background-color: #00ddaa;
+}
+
+#adminLoginBtn {
+    display: inline-block;
+    background-color: #00ffaa;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#adminLoginPanel {
+    margin-bottom: 20px;
+}
